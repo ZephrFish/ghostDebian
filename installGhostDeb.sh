@@ -13,7 +13,7 @@ if [ `whoami` != root ]; then
     exit 1
 fi
 
-echo "This script installs Nginx and Ghost on Ubuntu"
+echo "This script installs Nginx and Ghost on Debian"
 echo "To configure Nginx and Ghost please provide your hostname:"
 echo ""
 read HOSTNAME
