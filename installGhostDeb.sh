@@ -70,5 +70,5 @@ su -c "echo 'export NODE_ENV=production' >> ~/.profile" -s /bin/bash ghost
 su -c "source ~/.profile" -s /bin/bash ghost
 su -c "/usr/bin/pm2 kill" -s /bin/bash ghost
 su -c "env /usr/bin/pm2 start /home/ghost/start.sh --interpreter=bash --name ghost" -s /bin/bash ghost
-env PATH=$PATH:/usr/bin pm2 startup ubuntu -u ghost --hp /home/ghost
+env PATH=$PATH:/usr/bin pm2 startup debian -u ghost --hp /home/ghost
 su -c "pm2 save" -s /bin/bash ghost
