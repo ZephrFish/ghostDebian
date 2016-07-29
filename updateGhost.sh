@@ -9,7 +9,7 @@ fi
 cd /var/www/ghost
 mkdir temp
 cd temp
-wget https://ghost.org/zip/ghost-latest.zip …
+wget https://ghost.org/zip/ghost-latest.zip
 unzip *.zip
 cd ..
 
