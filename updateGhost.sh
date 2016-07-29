@@ -14,7 +14,7 @@ unzip *.zip
 cd ..
 
 # Stop Ghost.
-service ghost stop
+pm2 stop ghost
 
 # Make database backups.
 for file in content/data/*.db;
@@ -36,5 +36,5 @@ chown -R ghost:ghost ./
 rm -R temp
 
 # Start Ghost again.
-service ghost start
+pm2 start ghost
 echo "###### Ghost started. ######"
