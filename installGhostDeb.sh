@@ -22,8 +22,8 @@ read HOSTNAME
 apt-get -y update
 apt-get -y upgrade
 # Uncomment if you want latest or LTS node version
-curl -sL https://deb.nodesource.com/setup_6.x | sudo bash - # Latest
-# curl -sL https://deb.nodesource.com/setup_4.x | sudo bash - # LTS Version
+#curl -sL https://deb.nodesource.com/setup_6.x | sudo bash - # Latest
+curl -sL https://deb.nodesource.com/setup_4.x | sudo bash - # LTS Version
 apt-get install -y nodejs zip nginx ccze sudo
 
 ######Download and install Ghost######
